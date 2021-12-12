@@ -10,8 +10,10 @@
 
     try {
       const jsonPosts = await api.posts.browse({ include: "tags,authors" })
-      const jsonTags = await api.tags.browse({ include: "name" })
-      return { props: { posts: jsonPosts, tag: jsonTags } }
+      // const jsonTags = await api.tags.browse({ include: "name" })
+      // return { props: { posts: jsonPosts, tag: jsonTags } }
+      return { props: { posts: jsonPosts } }
+
     } catch (err) {
       console.log(err)
     }
@@ -56,7 +58,7 @@
     </figure>
     <div class="card-body">
       <h1 class="card-title"><a href="/posts/{post.slug}">{post.title}</a></h1>
-      <h3>{tag.name}</h3>
+      <h3>{post.tags[0].name}</h3>
       <p>{post.excerpt}</p>
       <div class="justify-center card-actions">
         <button class="btn btn-outline btn-primary"
