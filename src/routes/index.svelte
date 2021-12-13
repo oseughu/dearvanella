@@ -10,8 +10,6 @@
 
     try {
       const jsonPosts = await api.posts.browse({ include: "tags,authors" })
-      // const jsonTags = await api.tags.browse({ include: "name" })
-      // return { props: { posts: jsonPosts, tag: jsonTags } }
       return { props: { posts: jsonPosts } }
 
     } catch (err) {
@@ -22,7 +20,6 @@
 
 <script>
   export let posts
-  export let tag
 </script>
 
 <div
