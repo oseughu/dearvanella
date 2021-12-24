@@ -4,7 +4,7 @@
   export async function load() {
     const api = new GhostContentAPI({
       url: "https://blackwomanreads.herokuapp.com",
-      key: "42ce7db5f659a63ac0c4050219",
+      key: import.meta.env.VITE_GHOST_KEY,
       version: "v3",
     })
 
@@ -24,7 +24,6 @@
 <svelte:head>
   <title>Black Woman Reads | Vanella Macaulay</title>
 </svelte:head>
-
 
 {#each posts as post}
   <div class="card text-center shadow-2xl ">
