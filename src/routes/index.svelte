@@ -21,6 +21,11 @@
   export let posts
 </script>
 
+<svelte:head>
+  <title>Black Woman Reads | Vanella Macaulay</title>
+</svelte:head>
+
+
 {#each posts as post}
   <div class="card text-center shadow-2xl ">
     <figure class="px-10 pt-10">

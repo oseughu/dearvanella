@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>About</title>
+</svelte:head>
+
 <div class="flex items-center w-full px-4 py-10 bg-cover card bg-base-200">
   <div class="card  glass lg:card-side text-neutral-content">
     <figure class="p-6">
