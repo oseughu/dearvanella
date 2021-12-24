@@ -1,11 +1,8 @@
-<div
-  class="flex items-center w-full px-4 py-10 bg-cover card bg-base-200"
-
->
+<div class="flex items-center w-full px-4 py-10 bg-cover card bg-base-200">
   <div class="card  glass lg:card-side text-neutral-content">
     <figure class="p-6">
       <img
-        src="/static/Ella.jpg"
+        src="https://res.cloudinary.com/drze4mafd/image/upload/v1640350678/Ose/Ella_w6f6pg.jpg"
         alt="woman staring"
         class="rounded-lg shadow-lg"
       />
