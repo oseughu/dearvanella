@@ -1,6 +1,8 @@
 <div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content">
   <div class="px-2 mx-2 navbar-start">
-    <span class="text-md font-bold uppercase"> Black woman reads </span>
+    <span class="text-md font-bold uppercase">
+      <a href="/">Black woman reads </a>
+    </span>
   </div>
   <div class="hidden px-2 mx-2 navbar-center lg:flex">
     <img
@@ -12,7 +14,6 @@
     <div class="flex items-stretch">
       <a class="btn btn-ghost btn-sm rounded-btn" href="/"> Home </a>
       <a class="btn btn-ghost btn-sm rounded-btn" href="/about"> About </a>
-      <a class="btn btn-ghost btn-sm rounded-btn" href="/contact"> Contact </a>
     </div>
   </div>
 </div>

@@ -4,6 +4,9 @@ const config = {
 
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ["raleway"],
+    },
   },
 
   plugins: [require("daisyui")],

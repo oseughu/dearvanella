@@ -22,6 +22,7 @@
   "type": "module",
   "dependencies": {
     "@tryghost/content-api": "^1.5.16",
+    "@tryghost/helpers": "^1.1.54",
     "daisyui": "^1.16.2"
   }
 }
