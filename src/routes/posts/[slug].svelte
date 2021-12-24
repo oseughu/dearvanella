@@ -4,7 +4,7 @@
   export async function load({ page }) {
     const api = new GhostContentAPI({
       url: "https://blackwomanreads.herokuapp.com",
-      key: "42ce7db5f659a63ac0c4050219",
+      key: import.meta.env.VITE_GHOST_KEY || process.env.VITE_GHOST_KEY,
       version: "v3",
     })
 
@@ -23,6 +23,10 @@
   import Comments from "$lib/Comments.svelte"
   export let post
 </script>
+
+<svelte:head>
+  <title>{post.title}</title>
+</svelte:head>
 
 <div class="card shadow-lg">
   <div class="card-body">

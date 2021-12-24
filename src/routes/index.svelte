@@ -4,7 +4,7 @@
   export async function load() {
     const api = new GhostContentAPI({
       url: "https://blackwomanreads.herokuapp.com",
-      key: import.meta.env.VITE_GHOST_KEY,
+      key: import.meta.env.VITE_GHOST_KEY || process.env.VITE_GHOST_KEY,
       version: "v3",
     })
 
