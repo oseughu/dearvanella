@@ -18,6 +18,7 @@
 </script>
 
 <script>
+  import { goto } from "$app/navigation"
   export let posts
 </script>
 
@@ -38,8 +39,11 @@
       <h1 class="card-title"><a href="/posts/{post.slug}">{post.title}</a></h1>
       <p>{post.excerpt}</p>
       <div class="justify-center card-actions">
-        <button class="btn btn-outline btn-primary"
-          ><a href="/posts/{post.slug}">Read More</a>
+        <button
+          class="btn btn-outline btn-primary"
+          on:click={goto(`/posts/${post.slug}`)}
+        >
+          Read More
         </button>
       </div>
     </div>
