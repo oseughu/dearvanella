@@ -1,15 +1,15 @@
 const config = {
-  mode: "jit",
-  purge: ["./src/**/*.{html,js,svelte,ts}"],
+  mode: 'jit',
+  purge: ['./src/**/*.{html,js,svelte,ts}'],
 
   theme: {
     extend: {},
     fontFamily: {
-      sans: ["raleway"],
-    },
+      sans: ['raleway']
+    }
   },
 
-  plugins: [require("daisyui")],
+  plugins: [require('daisyui')]
 }
 
 module.exports = config

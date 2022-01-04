@@ -1,17 +1,17 @@
 <script context="module">
-  import GhostContentAPI from "@tryghost/content-api"
+  import GhostContentAPI from '@tryghost/content-api'
 
   export async function load({ page }) {
     const api = new GhostContentAPI({
-      url: "https://blackwomanreads.herokuapp.com",
+      url: 'https://blackwomanreads.herokuapp.com',
       key: import.meta.env.VITE_GHOST_KEY || process.env.VITE_GHOST_KEY,
-      version: "v3",
+      version: 'v3'
     })
 
     let slug = page.params.slug
 
     try {
-      const jsonPost = await api.posts.read({ slug }, { formats: ["html"] })
+      const jsonPost = await api.posts.read({ slug }, { formats: ['html'] })
       return { props: { post: jsonPost } }
     } catch (err) {
       console.log(err)
@@ -20,7 +20,7 @@
 </script>
 
 <script>
-  import Comments from "$lib/Comments.svelte"
+  import Comments from '$lib/Comments.svelte'
   export let post
 </script>
 

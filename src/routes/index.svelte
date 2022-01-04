@@ -1,15 +1,15 @@
 <script context="module">
-  import GhostContentAPI from "@tryghost/content-api"
+  import GhostContentAPI from '@tryghost/content-api'
 
   export async function load() {
     const api = new GhostContentAPI({
-      url: "https://blackwomanreads.herokuapp.com",
+      url: 'https://blackwomanreads.herokuapp.com',
       key: import.meta.env.VITE_GHOST_KEY || process.env.VITE_GHOST_KEY,
-      version: "v3",
+      version: 'v3'
     })
 
     try {
-      const jsonPosts = await api.posts.browse({ include: "tags,authors" })
+      const jsonPosts = await api.posts.browse({ include: 'tags,authors' })
       return { props: { posts: jsonPosts } }
     } catch (err) {
       console.log(err)
@@ -18,7 +18,7 @@
 </script>
 
 <script>
-  import { goto } from "$app/navigation"
+  import { goto } from '$app/navigation'
   export let posts
 </script>
 
@@ -27,12 +27,12 @@
 </svelte:head>
 
 {#each posts as post}
-  <div class="card text-center shadow-2xl ">
+  <div class="card text-center shadow-2xl">
     <figure class="px-10 pt-10">
       <img
-        src={post.feature_image}
+        src="{post.feature_image}"
         class="rounded-xl"
-        alt={post.feature_image_alt}
+        alt="{post.feature_image_alt}"
       />
     </figure>
     <div class="card-body">
@@ -41,7 +41,7 @@
       <div class="justify-center card-actions">
         <button
           class="btn btn-outline btn-primary"
-          on:click={goto(`/posts/${post.slug}`)}
+          on:click="{goto(`/posts/${post.slug}`)}"
         >
           Read More
         </button>
