@@ -5,7 +5,7 @@ const config = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['raleway']
+      sans: ['"marck script"']
     }
   },
 
