@@ -7,8 +7,7 @@
   <div class="hidden px-2 mx-2  navbar-center lg:flex">
     <img
       src="https://www.pngkey.com/png/full/283-2836077_how-to-set-use-pink-daisy-clipart-flower.png"
-      alt=""
-    />
+      alt="" />
   </div>
   <div class="navbar-end">
     <div class="flex items-stretch">

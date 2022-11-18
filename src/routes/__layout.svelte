@@ -1,6 +1,7 @@
 <script>
-  import Nav from '$lib/Nav.svelte'
+  import '$/app.postcss'
   import Footer from '$lib/Footer.svelte'
+  import Nav from '$lib/Nav.svelte'
 </script>
 
 <Nav />
@@ -8,11 +9,3 @@
   <slot />
 </main>
 <Footer />
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-</style>

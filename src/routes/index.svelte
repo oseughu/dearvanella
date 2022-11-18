@@ -29,20 +29,13 @@
 {#each posts as post}
   <div class="card text-center shadow-2xl">
     <figure class="px-10 pt-10">
-      <img
-        src="{post.feature_image}"
-        class="rounded-xl"
-        alt="{post.feature_image_alt}"
-      />
+      <img src={post.feature_image} class="rounded-xl" alt={post.feature_image_alt} />
     </figure>
     <div class="card-body">
       <h1 class="card-title"><a href="/posts/{post.slug}">{post.title}</a></h1>
       <p>{post.excerpt}</p>
       <div class="justify-center card-actions">
-        <button
-          class="btn btn-outline btn-primary"
-          on:click="{goto(`/posts/${post.slug}`)}"
-        >
+        <button class="btn btn-outline btn-primary" on:click={goto(`/posts/${post.slug}`)}>
           Read More
         </button>
       </div>

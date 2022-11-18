@@ -30,9 +30,7 @@
 
 <div class="card shadow-lg">
   <div class="card-body">
-    <h1 class="card-title text-2xl font-bold uppercase p-8 text-center"
-      >{post.title}</h1
-    >
+    <h1 class="card-title text-2xl font-bold uppercase p-8 text-center">{post.title}</h1>
     <p class="text-lg text-justify">{@html post.html}</p>
   </div>
 </div>
